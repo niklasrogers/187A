@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <!-- <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/> -->
+          <link type="text/css" rel="stylesheet" href="css/stylesheet_b.css"/>
+          <link href='http://fonts.googleapis.com/css?family=Lato:700,400,300,100' rel='stylesheet' type='text/css'>
+          <!-- Search Bar; JAVASCRIPT to clear search text when the field is clicked -->
+               <script type="text/javascript">
+               window.onload = function(){ 
+                    //Get submit button
+                    var submitbutton = document.getElementById("tfq");
+                    //Add listener to submit button
+                    if(submitbutton.addEventListener){
+                         submitbutton.addEventListener("click", function() {
+                              if (submitbutton.value == 'Search our website'){//Customize this text string to whatever you want
+                                  submitbutton.value = '';
+                              }
+                         });
+                    }
+               }
+               </script>
+          <!-- Carousel -->
+               <!-- Important Owl stylesheet -->
+                    <link rel="stylesheet" href="owl.carousel/owl-carousel/owl.carousel.css">     
+               <!-- Default Theme -->
+                    <link rel="stylesheet" href="owl.carousel/owl-carousel/owl.theme.css">
+               <!-- jQuery 1.7+ -->
+                    <script src="owl.carousel/assets/js/jquery-1.9.1.min.js"></script>
+               <!-- Include js plugin -->
+                    <script src="owl.carousel/owl-carousel/owl.carousel.js"></script>
+               <!-- Transitions -->
+                    <link href="owl.carousel/owl-carousel/owl.transitions.css" rel="stylesheet">
+                    <link href="owl.carousel/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+          <meta charset="UTF-8">
+          <meta name="author" content="Elizabeth Stevens and Niklas Rogers">
+          <meta name="description" content="COGS187A WI14">
+          <title>SD Scuba Community</title>
+     </head>
+     <body>
+<!-- Content -->
+          <div id="outercontainer">
+               <header>
+                    <div id="headerimage">
+                         <!-- Logo -->
+                              <a href="index.html" title="Main page"><img src="image/logosdscubacommunity.png" alt="SD Scuba Community" /></a>
+                    
+                         <!-- Search bar -->
+                              <div id="tfheader">
+                                   <form id="tfnewsearch" method="get" action="http://www.google.com">
+                                           <input type="text" class="tftextinput" name="q" size="15" maxlength="70"><input type="submit" value="Search" class="tfbutton">
+                                   </form>
+                                   <div class="tfclear"></div>
+                              </div>
+                    </div>
+               </header>
+
+               
+               <div id="innercontainer">
+                    <!-- Main Navigation -->
+                         <div id="navigation">
+                               <ul>
+                                    <li><span id="current"><a href="link.html" title="Link">Lorem ipsum</a></span></li>
+                                    <li><a href="link.html" title="Link">Esse occaecat</a></li>
+                                    <li><a href="link.html" title="Link">ut sit nulla</a></li>
+                                    <li><a href="link.html" title="Link">Ut in sit</a></li>
+                                    <li><a href="link.html" title="Link">proident deserunt</a></li>
+                                    <li><a href="link.html" title="Link">veniam in nulla</a></li>
+                                    <li><a href="link.html" title="Link">irure dolor</a></li>
+                                    <li><a href="link.html" title="Link">dolore anim</a></li>
+                                    <li><a href="link.html" title="Link">laborum eu ette</a></li>
+                               </ul>
+                         </div>
+
+                    <!-- Content -->
+                         <div id="content">
+                              <div class="contentrow1">
+                                   <div id="contentcontainer1">
+                                        <div class="secondarynavigation">
+                                             <span class="link">Link</span><br />
+                                             <span class="link">Link</span></br>
+                                             <span class="link">Link</span></br>
+                                             <span class="link">Link</span></br>
+                                             <span class="link">Link</span></br>
+                                             <span class="link">Link</span></br>
+                                             <span class="link">Link</span></br>
+                                             <span class="link">Link</span></br>
+                                             <span class="link">Link</span></br>
+                                             <span class="link">Link</span></br>
+                                             <span class="link">Link</span></br>
+                                        </div>
+                                   </div>
+
+                                   <div id="contentcontainer2">
+                                        <!-- Meh -->
+                                             <!-- <div id="owl-example" class="owl-carousel">
+                                                  <img src="image/san_diego_down_down_by_770077-d24gwya.jpg" />
+                                                  <img src="image/san_diego_downtown_ii_by_sllyvain-d3ko6a4.jpg" />
+                                             </div>
+                                             <div class="whatjs">
+                                                  <pre class="pre-show prettyprint linenums">
+                                                            $(document).ready(function() {
+                                                            $("#owl-example").owlCarousel();     
+                                                            });
+                                                  </pre>
+                                             </div> -->
+
+                                        <!-- Beh -->
+                                             <div id="owl-demo" class="owl-carousel owl-theme">
+                                                  <div class="item"><img src="image/san_diego_down_down_by_770077-d24gwya.jpg" /></div>
+                                                  <div class="item"><img src="image/san_diego_downtown_ii_by_sllyvain-d3ko6a4.jpg" /></div>
+                                             </div>
+                                            $(document).ready(function() {
+                                             
+                                            var owl = $("#owl-demo");
+                                             
+                                            owl.owlCarousel({
+                                            navigation : true,
+                                            singleItem : true,
+                                            transitionStyle : "fade"
+                                            });
+                                             
+                                            });
+                                   </div>
+                              </div>
+
+                              <div class="contentrow2">
+                                   <div id="contentcontainer3">
+                                        Lorem ipsum Pariatur et id id aliqua ea deserunt proident ut ex in adipisicing mollit consectetur nisi fugiat elit consequat cupidatat velit dolor eiusmod elit velit in commodo dolor aute ad ut nisi dolore pariatur aute qui in in sed et irure enim velit tempor est ex occaecat culpa dolor exercitation eiusmod nisi mollit labore labore Ut aute dolore cillum et pariatur commodo nostrud magna proident nisi mollit id minim labore ut velit ex magna dolor ut proident enim elit adipisicing ut incididunt elit id commodo exercitation eiusmod occaecat mollit deserunt laboris commodo incididunt mollit dolor id in commodo proident dolore dolor dolore nisi qui tempor labore ut in ut laboris reprehenderit commodo proident aute consequat in nulla sit anim in veniam eiusmod mollit elit eu fugiat Duis laborum anim consectetur consectetur tempor dolore laboris esse in quis quis.
+                                   </div>
+
+                                   <div id="contentcontainer4">
+                                        Lorem ipsum Ut dolore fugiat mollit in sint qui mollit sit sint nisi mollit commodo amet pariatur in et enim aute enim in ea nostrud labore in elit ut laboris id in ex qui incididunt incididunt minim et ut sunt Excepteur ea non dolor sunt reprehenderit ea sed do ex esse in qui sed commodo dolore enim reprehenderit mollit amet nostrud nisi aute sint laborum eu commodo ullamco voluptate ut exercitation culpa ut voluptate ea laborum cillum sit in laboris nisi fugiat non quis est qui ea amet dolore ea ut Excepteur irure mollit sed esse minim commodo commodo exercitation consequat do qui occaecat incididunt labore aliquip qui dolore laboris ut sunt incididunt deserunt culpa Duis irure laborum dolor officia qui sit voluptate ad commodo voluptate adipisicing dolore sunt minim ea ad sit elit velit proident dolore culpa esse nostrud ut veniam cillum qui pariatur consectetur aute adipisicing exercitation anim ullamco eu cillum Duis dolore proident sint esse nulla reprehenderit aliquip dolor laboris dolor sed dolor voluptate cupidatat magna commodo consequat aliquip veniam eiusmod aute sunt. Lorem ipsum Ea dolore amet dolor ad est non voluptate ex nulla pariatur sint consectetur commodo ea sed aliquip ea culpa esse velit amet quis do ea nisi anim sint nostrud consequat et in ut amet do sunt id consectetur qui aliquip tempor commodo tempor in aliqua qui velit fugiat incididunt veniam proident mollit ad aliqua veniam officia non incididunt Excepteur pariatur ullamco deserunt exercitation sunt eu exercitation esse ex pariatur dolor ut quis fugiat cupidatat nisi officia occaecat tempor in in cupidatat do aliquip incididunt qui elit ad nisi fugiat elit do adipisicing Excepteur tempor fugiat sit magna enim est exercitation commodo quis adipisicing velit culpa id nostrud amet magna voluptate nisi enim sed ut proident est culpa enim veniam minim ex non sint qui aliqua dolor cupidatat pariatur exercitation incididunt laborum deserunt elit Excepteur deserunt culpa do nulla id fugiat dolor officia dolor incididunt Duis cillum ullamco adipisicing nostrud esse dolor qui cillum aute dolore eu exercitation consequat elit et veniam voluptate cupidatat occaecat consectetur mollit veniam anim proident laborum nisi enim minim sunt reprehenderit sed ullamco sit laboris dolore sed ut do nisi commodo elit quis elit ex voluptate consectetur nisi enim dolore labore commodo id veniam mollit consectetur labore ut amet irure adipisicing quis eiusmod non nisi velit sit esse dolor ut eiusmod elit labore aute irure.
+                                   </div>
+                              </div>
+
+                         </div>
+
+                    <!-- Footer Sitemap -->
+                         <div id="footercontainer">
+                              <footer>
+                                   <div class="sitemap">
+                                        <span class="header">Header</span><br />
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                   </div>
+                                   <div class="sitemap">
+                                        <span class="header">Header</span><br />
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                   </div><div class="sitemap">
+                                        <span class="header">Header</span><br />
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                   </div><div class="sitemap">
+                                        <span class="header">Header</span><br />
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                   </div><div class="sitemap">
+                                        <span class="header">Header</span><br />
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                        <span class="link">Link</span></br>
+                                   </div>
+                              </footer>
+                         </div>
+               </div>
+          </div>
+     </body>
+</html>
