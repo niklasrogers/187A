@@ -154,21 +154,26 @@ body{
           /*padding:10px;*/
           text-align:left;
           background-color:rgba(254,254,254,.90);
-          border:1px solid rgba(254,254,254,.1);
-          border-radius:1px;
+          /*border:1px solid rgba(254,254,254,.1);*/
+          border-radius:2px;
           box-shadow:2px 2px 2px rgba(37,37,37,.2);
      }
 
      /*Main Navigation*/
           #navigation{
               /*margin:10px;*/ margin:0 auto;
-              padding:10px 0px 10px 0px;
+              /*padding:10px 0px 10px 0px;*/
+              padding:0px 10px;
               width:1004px;
               text-align:left;
               /*border:1px solid rgba(0,0,0,.5);*/
               /*background:rgba(122,23,40,1);*/
               vertical-align:middle;
               height:35px;
+              /*background:rgba(255,255,255,.5);*/
+              /*background:rgba(59,128,120,.5);*/
+              background:rgba(159,128,120,.7);
+              border-radius:1px;
           }
 
           #navigation ul{
@@ -179,45 +184,91 @@ body{
               list-style:none;
               display:inline;
               vertical-align:middle;
-              padding:10px 5px 5px 5px;
+              /*padding:10px 7px 5px 7px;*/
               position:relative;
               font-size:95%;
               text-transform:uppercase;
           }
 
-          #navigation a:link, #navigation a:visited, #navigation a:active{
+          /*#navigation a:link, #navigation a:visited, #navigation a:active{
                text-decoration:none;
                color:rgba(0,0,0,.9);
-          }
+          }*/
 
           #current{
           }
 
-          hr{
-               margin-bottom:15px;
-          }
+          /*Dropdown*/
+               #navigation ul {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+               }
 
-          hr.carved {
-            clear: both; 
-            float: none; 
-            width: 90%; 
-            height: 2px;
-            margin: 0 auto;
-            border: none; 
-            background: #ddd;
-            background-image: -webkit-gradient(
-                linear,
-                left top,
-                left bottom,
-                color-stop(0.5, rgb(221,221,221)),
-                color-stop(0.5, rgb(255,255,255))
-            );
-            background-image: -moz-linear-gradient(
-                center top,
-                rgb(221,221,221) 50%,
-                rgb(255,255,255) 50%
-            );
-          }
+               #navigation ul li {
+                    display:block;
+                    position:relative;
+                    padding:10px 7px 5px 7px;
+                    float: left;
+               }
+
+               #navigation li ul {
+                    display: none;
+                    background:rgba(255,255,255,.95);
+               }
+
+               #navigation ul li a {
+                    display:block;
+                    text-decoration:none;
+                    margin-left:1px;
+                    white-space:nowrap;
+                    color:rgba(255,255,255,.9);
+                    font-weight:bold;
+               }
+
+               #navigation ul li a:hover {
+                    z-index:10;
+               }
+
+               #navigation ul li:hover {
+                    background:rgba(159,128,120,1);
+                    z-index:10;
+                    border-radius:2px;
+                    padding-bottom:9px;
+               }
+
+               #navigation ul li ul li:hover {
+                    background:rgba(159,128,120,1);
+                    border-radius:2px;
+                    z-index:10;
+               }
+
+               #navigation li:hover ul {
+                    z-index:10;
+                    display: block;
+                    position:absolute;
+                    top:35px;
+                    left:0px;
+                    /*background:rgba(159,128,120,.7);*/
+                    background:rgba(255,255,255,.9);
+                    border-radius:2px;
+               }
+
+               #navigation li:hover li {
+                    z-index:10;
+                    float:none;
+                    background:rgba(159,128,120,.7);
+                    padding:10px 50px 10px 10px;
+                    border-bottom:1px solid rgba(255,255,255,.9);
+               }
+
+               #navigation li:hover a {
+                    z-index:10;
+               }
+
+               #navigation li:hover li a:hover {
+                    z-index:10;
+               }
 
      /*Content*/
           #content{
@@ -255,6 +306,10 @@ body{
                }
 
                /*Secondary Navigation*/
+                    .secondarynavigation{
+                         line-height:175%;
+                    }
+
                     .secondarynavigation a:link, .secondarynavigation a:visited, .secondarynavigation a:active{
                          color:rgba(0,0,50,.9);
                          /*text-transform:uppercase;*/
@@ -339,6 +394,7 @@ body{
                .group{
                     padding:15px;
                     float:left;
+                    line-height:80%;
                     /*background:rgba(22,139,10,1);*/
                }
 
