@@ -34,13 +34,13 @@ body{
 
 /*Links*/
      a:link{
-          text-decoration:none;
-          color:rgba(0,0,0,.9);
+          text-decoration:underline;
+          color:rgba(0,0,150,.9);
      }
 
      a:visited{
           text-decoration:none;
-          color:rgba(0,0,0,.9);
+          color:rgba(0,0,150,.9);
      }
 
      a:hover{
@@ -49,13 +49,13 @@ body{
           -mox-transition:all 0.5s ease;
           -o-transition:all 0.5s ease;
           text-decoration:none;
-          color:rgba(0,0,0,.9);
+          color:rgba(0,0,150,.9);
           opacity:.5;
      }
 
      a:active{
           text-decoration:none;
-          color:rgba(0,0,0,.9);
+          color:rgba(0,0,150,.9);
      }
 
 /*Header Section*/
@@ -162,15 +162,17 @@ body{
      /*Main Navigation*/
           #navigation{
               /*margin:10px;*/ margin:0 auto;
-              padding:10px 0px 20px 0px;
+              padding:10px 0px 10px 0px;
               width:1004px;
               text-align:left;
               /*border:1px solid rgba(0,0,0,.5);*/
               /*background:rgba(122,23,40,1);*/
+              vertical-align:middle;
+              height:35px;
           }
 
           #navigation ul{
-               margin:0 35px;
+               margin:0 auto;
           }
 
           #navigation ul, #navigation li{
@@ -179,10 +181,42 @@ body{
               vertical-align:middle;
               padding:10px 5px 5px 5px;
               position:relative;
-              font-size:104%;
+              font-size:95%;
+              text-transform:uppercase;
+          }
+
+          #navigation a:link, #navigation a:visited, #navigation a:active{
+               text-decoration:none;
+               color:rgba(0,0,0,.9);
           }
 
           #current{
+          }
+
+          hr{
+               margin-bottom:15px;
+          }
+
+          hr.carved {
+            clear: both; 
+            float: none; 
+            width: 90%; 
+            height: 2px;
+            margin: 0 auto;
+            border: none; 
+            background: #ddd;
+            background-image: -webkit-gradient(
+                linear,
+                left top,
+                left bottom,
+                color-stop(0.5, rgb(221,221,221)),
+                color-stop(0.5, rgb(255,255,255))
+            );
+            background-image: -moz-linear-gradient(
+                center top,
+                rgb(221,221,221) 50%,
+                rgb(255,255,255) 50%
+            );
           }
 
      /*Content*/
@@ -219,6 +253,13 @@ body{
                     overflow:hidden;
                     /*background:rgba(94,152,159,.9);*/
                }
+
+               /*Secondary Navigation*/
+                    .secondarynavigation a:link, .secondarynavigation a:visited, .secondarynavigation a:active{
+                         color:rgba(0,0,50,.9);
+                         /*text-transform:uppercase;*/
+                         text-decoration:none;
+                    }
 
                /*Carousel*/
                     #carouselbg{
@@ -301,16 +342,18 @@ body{
                     /*background:rgba(22,139,10,1);*/
                }
 
-               .header:link{
+               .header:link, .header:visited, .header:active { /*.header a:link, .header a:visited, .header a:active{*/
                     font-size:75%;
                     text-transform:uppercase;
-                    text-decoration:underline;
-                    color:rgba(0,0,81,.9);
+                    text-decoration:none;
+                    font-weight:bold;
+                    color:rgba(0,0,50,.9);
                }
 
-               .link:link{
+               .link:link, .link:visited, .link:active { /*.link a:link, .link a:visited, .link a:active{*/
                     font-size:70%;
-                    color:rgba(0,0,81,.9);
+                    text-decoration:none;
+                    color:rgba(0,0,50,.9);
                }
 
      /*Site Information*/
@@ -322,9 +365,15 @@ body{
                position:relative;
                float:left;
                font-size:70%;
+               color:rgba(255,255,255,.9);
                /*background:rgba(30,50,120,1);*/
           }
 
+          #siteinfor a:link, #siteinfor a:visited, #siteinfor a:active{
+               color:rgba(255,255,255,.9);
+               text-decoration:none;
+
+          }
           #siteinfor ul, #siteinfor li{
                list-style:none;
                display:inline;
