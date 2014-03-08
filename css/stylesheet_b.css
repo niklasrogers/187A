@@ -58,7 +58,7 @@ body{
           color:rgba(0,0,0,.9);
      }
 
-/*Header*/
+/*Header Section*/
      header{
           margin:0 auto;
           padding:0;
@@ -72,20 +72,21 @@ body{
           background-position:center top;
      }
 
-     #headerimage{
-          margin:0 auto;
-          width:1024px;
-     }
+     /*Logo*/
+          #headerimage{
+               margin:0 auto;
+               width:1024px;
+          }
 
-     header #headerimage a:hover{
-          opacity:.9;
-     }
+          header #headerimage a:hover{
+               opacity:.9;
+          }
 
-     header #headerimage img{
-          padding:90px 0px 0px 0px;
-          float:left;
-          opacity:.95;
-     }
+          header #headerimage img{
+               padding:90px 0px 0px 0px;
+               float:left;
+               opacity:.95;
+          }
 
      /*Search Bar*/
           #tfheader{
@@ -160,18 +161,28 @@ body{
 
      /*Main Navigation*/
           #navigation{
-              margin:10px;
+              /*margin:10px;*/ margin:0 auto;
+              padding:10px 0px 20px 0px;
               width:1004px;
               text-align:left;
               /*border:1px solid rgba(0,0,0,.5);*/
+              /*background:rgba(122,23,40,1);*/
+          }
+
+          #navigation ul{
+               margin:0 35px;
           }
 
           #navigation ul, #navigation li{
               list-style:none;
               display:inline;
               vertical-align:middle;
-              padding:10px 5px 25px 5px;
+              padding:10px 5px 5px 5px;
               position:relative;
+              font-size:104%;
+          }
+
+          #current{
           }
 
      /*Content*/
@@ -279,16 +290,46 @@ body{
           }
 
           /*Sitemap*/
-               .sitemap{
-                    padding:25px;
+               #sitemap{
+                    /*width:1004px;
+                    margin:0 auto;*/
+               }
+
+               .group{
+                    padding:15px;
                     float:left;
-                    /*border:1px solid rgba(0,0,0,.5);*/
+                    /*background:rgba(22,139,10,1);*/
                }
 
-               .header{
-                    font-size:90%;
-               }
-
-               .link{
+               .header:link{
                     font-size:75%;
+                    text-transform:uppercase;
+                    text-decoration:underline;
+                    color:rgba(0,0,81,.9);
                }
+
+               .link:link{
+                    font-size:70%;
+                    color:rgba(0,0,81,.9);
+               }
+
+     /*Site Information*/
+          #siteinfor{
+               /*width:1004px;*/
+               margin:25px 0px 25px 0px;
+               padding:0px 49px;
+               display:block;
+               position:relative;
+               float:left;
+               font-size:70%;
+               /*background:rgba(30,50,120,1);*/
+          }
+
+          #siteinfor ul, #siteinfor li{
+               list-style:none;
+               display:inline;
+               vertical-align:middle;
+               padding:0px 20px;
+               position:relative;
+               text-transform:uppercase;
+          }
