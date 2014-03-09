@@ -174,7 +174,7 @@ body{
               /*background:rgba(159,128,120,.7);*/
               background:rgba(0,0,0,.9);
               border-radius:2px;
-              box-shadow:2px 2px 2px rgba(37,37,37,.2);
+              /*box-shadow:2px 2px 2px rgba(37,37,37,.2);*/
           }
 
           #navigation ul{
@@ -208,7 +208,7 @@ body{
 
           #nav{
                width:100%;
-               min-width:1024px;
+               min-width:1004px;
           }
 
           /*Dropdown*/
@@ -240,18 +240,18 @@ body{
                }
 
                #navigation ul li a:hover {
-                    z-index:10;
+                    /*z-index:10;*/
                }
 
                #navigation ul li:hover {
-                    background:rgba(255,255,255,.2);
+                    background:rgba(0,0,0,.9);
                     z-index:10;
                     border-radius:2px;
-                    padding-bottom:9px;
+                    padding-bottom:7px;
                }
 
                #navigation ul li ul li:hover {
-                    background:rgba(255,255,255,.2);
+                    background:rgba(0,0,0,.9);
                     border-radius:2px;
                     z-index:10;
                }
@@ -337,31 +337,121 @@ body{
                          float:right;
                          display:block;
                          overflow:hidden;
-                         /*background:rgba(94,152,159,.9);*/
-                         /*background:rgba(39,109,113,.9);*/
-                         background:rgba(0,0,0,.9);
-                         /*background:rgba(159,128,120,.9);*/
+                         background-color:rgba(0,0,0,.9);
                     }
 
                     #carouselbg a:hover{
                          opacity:1;
                     }
 
-                    #owl-demo .item img{
-                         display:block;
-                         width:100%;
-                         height:auto;
-                    }
+                    /*Pure CSS Slider*/
+                         #css3-slider {
+                           margin:0 auto;
+                           padding:0px 0px;
+                           width:750px;
+                           height:250px;
+                           position:relative;
+                         }
 
-                    /*#owl-headline-tabs{
-                         display:block;
-                         position:relative;
-                         width:125px;
-                         height:25px;
-                         left:5px;
-                         top:-55px;
-                    }*/
+                         #css3-slider li {
+                           list-style:none;
+                           margin:0px 0px;
+                           padding:0px 0px;
+                         }
 
+                         /* Navigation */
+                         #css3-slider li input + label {
+                           position:absolute;
+                           bottom:5px;
+                           right:82px;
+                           z-index:999;
+                           font-size:75%;
+                           background:rgba(0,0,0,.9);
+                           color:rgba(255,255,255,.9);
+                           margin:5px 0px;
+                           padding:0px 0px;
+                           width:16px;
+                           text-align:center;
+                           cursor:pointer;
+                         }
+
+                         #css3-slider li:nth-child(2) label {right:64px;}
+                         #css3-slider li:nth-child(3) label {right:46px;}
+                         #css3-slider li:nth-child(4) label {right:28px;}
+                         #css3-slider li:nth-child(5) label {right:10px;}
+
+                         /* Images */
+                         #css3-slider li img {
+                           border:none;
+                           outline:none;
+                           position:absolute;
+                           top:50%;
+                           left:50%;
+                           width:0px;
+                           height:0px;
+                           visibility:hidden;
+                           opacity:0;
+                           -webkit-transition: opacity 1s ease-in;
+                           -moz-transition: opacity 1s ease-in;
+                           -o-transition: opacity 1s ease-in;
+                           -ms-transition: opacity 1s ease-in;
+                           transition: opacity 1s ease-in;
+                         }
+
+                         /* Captions */
+                         #css3-slider a {
+                           text-decoration:none !important;
+                         }
+
+                         #css3-slider li a span {
+                           cursor:default;
+                           display:block;
+                           position:absolute;
+                           right:0px;
+                           bottom:0px;
+                           left:0px;
+                           background:rgba(0,0,0,.7);
+                           font-size:110%;
+                           line-height:110%;
+                           color:rgba(255,255,255,.9);
+                           padding:10px 10px;
+                           text-align:left;
+                           opacity:0;
+                           -webkit-transition:all 1s ease-in-out;
+                           -moz-transition:all 1s ease-in-out;
+                           -ms-transition:all 1s ease-in-out;
+                           -o-transition:all 1s ease-in-out;
+                           transition:all 1s ease-in-out;
+                         }
+
+                         /* Active navigation */
+                         #css3-slider li input:checked + label {
+                           background:rgba(255,255,255,.9);
+                           color:rgba(0,0,0,.9);
+                         }
+
+                         /* Show the image with transition */
+                         #css3-slider li input:checked ~ img,
+                         #css3-slider li input:checked ~ a img {
+                           top:0%;
+                           left:0%;
+                           width:750px;
+                           height:250px;
+                           visibility:visible;
+                           opacity:1;
+                           z-index:7;
+                         }
+
+                         /* Show the caption with fade effect */
+                         #css3-slider li input:checked ~ a span {
+                           opacity:1;
+                           z-index:8;
+                         }
+
+                         /* Hide the radio */
+                         #css3-slider input {
+                           display:none;
+                         }
           /*Row 2*/
                .row2{
                     width:1004px;
@@ -381,7 +471,7 @@ body{
 
                #row2column2{
                     width:750px;
-                    /*border:1px solid rgba(0,0,0,.5);*/
+                    border:1px solid rgba(0,0,0,.5);
                     float:right;
                     display:block;
                     overflow:hidden;
