@@ -471,13 +471,13 @@ body{
 
                #row2column2{
                     width:750px;
-                    border:1px solid rgba(0,0,0,.5);
+                    /*border:1px solid rgba(0,0,0,.5);*/
                     float:right;
                     display:block;
                     overflow:hidden;
                }
 
-               #columnpadding{
+               .columnpadding{
                     padding:5px;
                }
 
