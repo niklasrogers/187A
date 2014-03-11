@@ -293,6 +293,56 @@ body{
                text-align:left;
           }
 
+          .rightmargin{
+            margin-right:10px;
+          }
+
+          .centermargin{
+            margin:0 10px 0 10px;
+          }
+
+          .leftmargin{
+            margin-left:10px;
+          }
+
+          .columnpadding{
+               padding:5px;
+          }
+
+         .row2 h1{
+              font-size:175%;
+              line-height:150%;
+              font-weight:400;
+              text-transform:uppercase;
+              /*background:rgba(120,30,20,.9);*/
+              margin:0;
+         }
+
+         .row2 h2{
+              font-size:150%;
+              /*line-height:150%;*/
+              font-weight:400;
+              text-transform:uppercase;
+              /*background:rgba(120,30,20,.9);*/
+              margin:0;
+         }
+
+         .row2 h3{
+              font-size:125%;
+              /*line-height:140%;*/
+              font-weight:400;
+              text-transform:uppercase;
+              /*background:rgba(120,30,20,.9);*/
+              margin:0;
+         }
+
+         .row2 hr{
+              /*background:rgba(70,70,70,.9);*/
+              color:rgba(70,70,70,.4);
+              height:1px;
+              margin:5px 0 15px 0;
+         }
+
           /*Row 1*/
                .row1{
                     width:1004px;
@@ -465,10 +515,6 @@ body{
                     overflow:hidden;
                }
 
-               .columnpadding{
-                    padding:5px;
-               }
-
                /*#row2column1*/
                    #row2column1{
                         /*background:rgba(230,230,230,.9);*/
@@ -477,33 +523,6 @@ body{
                         float:left;
                         display:block;
                         overflow:hidden;
-                   }
-
-                   .row2 h1{
-                        /*font-size:175%;*/
-                        /*line-height:150%;*/
-                        font-weight:400;
-                        text-transform:uppercase;
-                        /*background:rgba(120,30,20,.9);*/
-                        margin:0;
-                   }
-
-                   .row2 h2{
-                        /*font-size:125%;*/
-                        /*line-height:150%;*/
-                        font-weight:400;
-                        text-transform:uppercase;
-                        /*background:rgba(120,30,20,.9);*/
-                        margin:0;
-                   }
-
-                   .row2 h3{
-                        font-size:155%;
-                        line-height:140%;
-                        font-weight:400;
-                        text-transform:uppercase;
-                        /*background:rgba(120,30,20,.9);*/
-                        margin:0;
                    }
 
                    #row2column1 section{
@@ -517,6 +536,11 @@ body{
                         float:right;
                         display:block;
                         overflow:hidden;
+                   }
+
+                   #row2column2 section section{
+                    float:left;
+                    width:225px;
                    }
 
      /*Footer*/
